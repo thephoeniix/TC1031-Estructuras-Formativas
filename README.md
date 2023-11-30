@@ -12,6 +12,6 @@
 ### - 7 Arbol Desplegado Splay Tree 
    Se aclararon dudas y se realizo la actividad
 ### - 8 Grafo Busqueda 
-    Correción de error al compilar el código, se modifico.
+  Correción de error al compilar el código, se modifico.
 
   
