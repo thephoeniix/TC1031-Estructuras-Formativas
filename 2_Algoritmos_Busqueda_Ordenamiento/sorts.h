@@ -17,7 +17,7 @@ class Sorts {
         void ordenaSeleccion(vector<T>&v);
         void ordenaBurbuja(vector<T>&v);
         void ordenaMerge(vector<T>&v);
-        T busqSecuencial(const vector<T>&v, int value);
+       int busqSecuencial(const vector<T>&vec, int d);
         T busqBinaria(vector<T>&v, int value);
 };
 
@@ -113,14 +113,15 @@ void Sorts<T>::ordenaMerge(vector<T>&vec){
 }
 
 template <class T>
-T Sorts<T>::busqSecuencial(const vector<T>&v, int value){
-    for(int i = 1; i < v.size(); i ++){
-        if (value == v[i]){
+int Sorts<T>::busqSecuencial(const vector<T>&vec, int d){
+    for(int i = 1; i < vec.size(); i ++){
+        if (d == vec[i]){
             return i;
         }
     }
     return -1;
 }
+
 
 template <class T>
 T Sorts<T>::busqBinaria(vector<T>&v, int value){
